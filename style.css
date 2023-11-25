@@ -2,42 +2,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
 body {
+  background-color: #eae2b7;
   color: #003049;
   font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 40px;
-  background-color: #eae2b7;
+  padding: 30px;
 }
 
-section {
-  padding-bottom: 20px ;
-}
-
-nav li {
-  margin-right: 20px;
-  margin-bottom: 30px;;
-  list-style-type: none;
-  display: inline-block;
-}
-header,footer {
-  text-align: center;
-}
-a {
-  color: #d62828;
-}
-a:hover {
-  color: #f77f00;
-}
-
-/* Set the font family for any h1, h2, or h3 heading */
+/* Headings */
 h1,
-h2,
-h3 {
+h2, h3
+ {
   font-family: "Playfair Display", Times, serif;
   text-align: center;
 }
 
+
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Containers */
+div {
+  background-color: #eae2b7;
+  margin: auto;
+  width: 600px;
+}
+
+.container {
+  padding-left: 50px;
+  margin-left: 50px;
+  white-space: pre-line;
+}
+.my-list {
+  padding-left: 300px;
+  margin-left: 50px;
+  font-size: 14px;
+
+}
+.image-container {
+  float: left;
+  margin-bottom: 80px;
+  margin-right: 50px;
+}
+ .about-header{
+  padding-right: 75px;
+  text-align: right;
+}
+
+.portfolio-container {
+
+  display: flex;
+}
+
+.project {
+  margin: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+
 article {
-  padding: 50px 0;
+  padding: 40px 0;
 }
 
 article div {
@@ -45,29 +74,52 @@ article div {
   width: 100%;
 }
 
+/* Paragraphs */
 p {
   line-height: 1.5;
+  font: 14px;
+
 }
 
-/* The div container constrains the content width within the main container to 600px */
-div {
-  margin: auto;
-  width: 600px;
+/* Links */
+a:link {
+  color: #d62828;
 }
 
+a:hover {
+  color: #f77f00;
+}
+nav {
+  padding-left: 10px;
+  padding-top: 30px;
+}
+nav a {
+  display: inline;
+  padding-left: 20px;
+  padding-top: 35px;
+}
+
+/* Images */
 img {
   width: 100%;
   max-width: 200px;
   height: auto;
 }
 
-hr {
-  border: 1px solid black;
+.image-circle {
+  border: 2px solid #003049;
+  border-radius: 50%;
+  max-width: 25%;
+  max-height:35%;
+  margin-left: 90px;
 }
 
-/* Add your solution below */
+/* Footer */
+footer {
+  text-align: center;
+}
 
-.image-circle {
-  border-radius: 50%;
-  border: 2px solid #003049;
+/* Other page elements */
+hr {
+  border: 1px solid black;
 }
